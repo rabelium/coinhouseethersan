@@ -18,9 +18,9 @@ function ScannerScene({navigation}) {
   const [address, setAddress] = React.useState('');
   const [data, setData] = React.useState([]);
   const scanner = useRef(null);
-  const onSuccess = (result: any) => {
-    if (EthereumAddress.isAddress(result)) {
-      setAddress(result);
+  const onSuccess = ({data}: {data: string}) => {
+    if (EthereumAddress.isAddress(data)) {
+      setAddress(data);
     }
   };
 

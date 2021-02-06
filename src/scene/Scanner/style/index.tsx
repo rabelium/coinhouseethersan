@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-  container: {flex: 1, justifyContent: 'center', alignItems: 'center'},
+  container: {flex: 1},
   camera: {flex: 5, alignItems: 'stretch'},
   topView: {flex: 0},
   bottomView: {flex: 1, height: 128},
