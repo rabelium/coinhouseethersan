@@ -15,9 +15,7 @@ import style from './style';
 import EtherscanApi from '../../common/builder/scanner';
 
 function HomeScene({navigation}) {
-  const [address, setAddress] = React.useState(
-    '0xf7eB7637DeD2696B152c7D5EDEe502902B0F1c91',
-  );
+  const [address, setAddress] = React.useState('');
   const [data, setData] = React.useState([]);
   const [status, setStatus] = React.useState('basic');
 
